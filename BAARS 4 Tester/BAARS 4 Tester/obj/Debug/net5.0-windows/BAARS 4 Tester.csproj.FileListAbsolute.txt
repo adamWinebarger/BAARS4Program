@@ -1,0 +1,26 @@
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\bin\Debug\net5.0-windows\BAARS 4 Tester.exe
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\bin\Debug\net5.0-windows\BAARS 4 Tester.deps.json
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\bin\Debug\net5.0-windows\BAARS 4 Tester.runtimeconfig.json
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\bin\Debug\net5.0-windows\BAARS 4 Tester.runtimeconfig.dev.json
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\bin\Debug\net5.0-windows\BAARS 4 Tester.dll
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\bin\Debug\net5.0-windows\ref\BAARS 4 Tester.dll
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\bin\Debug\net5.0-windows\BAARS 4 Tester.pdb
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\BAARS 4 Tester.csproj.AssemblyReference.cache
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\BAARS 4 Tester_MarkupCompile.cache
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\BAARS 4 Tester_MarkupCompile.lref
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\BAARS 4 Tester.g.resources
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\BAARS 4 Tester.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\BAARS 4 Tester.AssemblyInfoInputs.cache
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\BAARS 4 Tester.AssemblyInfo.cs
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\BAARS 4 Tester.csproj.CoreCompileInputs.cache
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\BAARS 4 Tester.dll
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\ref\BAARS 4 Tester.dll
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\BAARS 4 Tester.pdb
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\BAARS 4 Tester.genruntimeconfig.cache
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\TesterInfoWindow.g.cs
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\TesterInfoWindow.baml
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\TestWindow.g.cs
+C:\Users\adamk\source\repos\BAARS 4 Tester\BAARS 4 Tester\obj\Debug\net5.0-windows\TestWindow.baml

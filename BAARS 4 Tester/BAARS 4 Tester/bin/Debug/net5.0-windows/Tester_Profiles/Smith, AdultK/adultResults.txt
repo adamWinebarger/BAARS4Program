@@ -1,0 +1,21 @@
+Name: Smith, Adult Kilo
+Age: 22    Gender: male
+Adult results
+
+
+Section Results: 
+Section 1 raw score: 21
+Section 1 symptoms count: 4
+Section 2 raw score: 12
+Section 2 symptoms count: 6
+Section 3 raw score: 10
+Section 3 symptoms count: 2
+Section 4 raw score: 23
+Section 4 symptoms count: 5
+
+
+Sum of raw scores section 1 thru 3: 43
+Section 1 Symptoms count: 4
+Sum  pf sections 2 and 3 symptoms count: 8
+Total ADHD Symptoms count (1-3): 12
+SCT Symptoms Count: 5

@@ -1,0 +1,11 @@
+Name: Should work, This one  
+Age: 12    Gender: male
+Child results
+
+
+Section 1 Total Score: total1
+Section 1 Symptoms Count: symptom1
+Section 2 Total Score: total2
+Section 2 Symptoms Count: symptom2
+Sum of Sections 1-2 Total Score: sumTotal
+Sum of Sections 1-2 Symptoms Count: sumSymptoms

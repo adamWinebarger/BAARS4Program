@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "BAARS 4 Tester/1.0.0": {
+        "runtime": {
+          "BAARS 4 Tester.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BAARS 4 Tester/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
