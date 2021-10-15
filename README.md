@@ -42,6 +42,9 @@ ScoreBAARS.cs
 
 ScoreBAARSYouth.cs
 - This class extends ScoreBAARS.cs and determines the scores of the young ins
+- getValue() - Gets the number value of total1, total2, symptom1, symptom2, sumtotal, and sumSymptoms
 
 ScoreBAARSAdult.cs
 - This class also extends ScoreBAARS.cs and determines the scores of the adults
+- GetSectionTotal() - Returns the secotion total 1, 2, 3, or 4, depending on which section is given
+- GetSymptomTotal() - Returns the symptom total depending on the section
