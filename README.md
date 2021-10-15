@@ -3,15 +3,11 @@
 Main Window.xaml
 - This file handles the design & code for the start menu of the program
 - Menu options include take test, score test, and a table of people who have already taken the test
-
-Test Info Window.xaml
-- This file handles asks for all the user information in order to allow them to take the test
 - TakeTestButton_Click() - Button to get user to take test, opens user information input window
 - QuickScoreButton_Click() - Quickly calculate the score
-
-Test Window.xaml
-- This file handles the design & code for taking the test
-- Allows the user to take the test, then saves their info and score to a file
+- 
+Test Info Window.xaml
+- This file handles asks for all the user information in order to allow them to take the test
 - SubmitButton_Click() - Ensures all information is valid, creates directory for the tester & saves tester info to a file, then opens the test window
 - AgeTextBox_TextChanged() - If Age isn't valid, show error and repromt for input
 - MaleRadioButton_Checked() - Sets other radio button to not checked
@@ -20,6 +16,22 @@ Test Window.xaml
 - AgeIsValid() - Returns true if Age is an INT, not blank, and not null
 - CreateDirectory4Tester() - Creates the directory for all the users information and scores
 - CreateTesterInfoTextFile() - Writes all the tester information into a text file in the users directory
+
+Test Window.xaml
+- This file handles the design & code for taking the test
+- Allows the user to take the test, then saves their info and score to a file
+- NextButton_Click() - Loads the next question and stores the current answer 
+- BackButton_Click() - Goes to the previous question and resets the radio buttons
+- SubmitButton_Click() - Scores the test and closes the window
+- NextQuestion() - Displays the next question and resets the radio buttons
+- StoreAnswer() - Stores the answer into the answer array
+- CheckButtonVisibility() - Hides the back button if there is no previous questions and shows submit question when all questions are answered
+- ResetRadioButtons() - Sets all the radio buttons to unchecked
+- ScoreTest() - Calculates the score using the ScoreBAARS class and writes those results to the appropriate file
+- SaveAnswers2Textfile() - Saves all the answers that the user put into a text file in their directory
+- WriteAdultResults2TextFile() - Saves the adult scores for the test to a text file in their directory
+- WriteYouthResults2TextFile() - Saves the youth scores for the test to a text file in their directory
+
 
 Bars Scoring Classes
 
