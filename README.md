@@ -37,6 +37,8 @@ Bars Scoring Classes
 
 ScoreBAARS.cs
 - This class contains two functions, total score and symptom count
+- TotalScore() - Adds up all the answer scores to the total score
+- SymptomCount() - Determines the total number of symptoms
 
 ScoreBAARSYouth.cs
 - This class extends ScoreBAARS.cs and determines the scores of the young ins
