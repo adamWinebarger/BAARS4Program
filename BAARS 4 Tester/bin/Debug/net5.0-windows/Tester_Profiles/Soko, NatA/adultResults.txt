@@ -1,0 +1,21 @@
+Name: Soko, Nat Asha
+Age: 21    Gender: female
+Adult results
+
+
+Section Results: 
+Section 1 raw score: 28
+Section 1 symptoms count: 6
+Section 2 raw score: 15
+Section 2 symptoms count: 10
+Section 3 raw score: 13
+Section 3 symptoms count: 3
+Section 4 raw score: 28
+Section 4 symptoms count: 7
+
+
+Sum of raw scores section 1 thru 3: 56
+Section 1 Symptoms count: 6
+Sum  pf sections 2 and 3 symptoms count: 13
+Total ADHD Symptoms count (1-3): 19
+SCT Symptoms Count: 7

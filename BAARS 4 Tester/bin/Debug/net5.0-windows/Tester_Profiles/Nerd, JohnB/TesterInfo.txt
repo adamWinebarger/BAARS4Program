@@ -1,0 +1,6 @@
+Last Name: Nerd
+First Name: John
+Middle Name: Baby
+Age: 19
+Gender: male
+Path: Tester_Profiles\Nerd, JohnB.

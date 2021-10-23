@@ -1,0 +1,6 @@
+Last Name: Soko
+First Name: Nat
+Middle Name: Asha
+Age: 21
+Gender: female
+Path: Tester_Profiles\Soko, NatA.

@@ -1,0 +1,6 @@
+Last Name: Kenboi
+First Name: Obi
+Middle Name: Wan
+Age: 40
+Gender: male
+Path: Tester_Profiles\Kenboi, ObiW.

@@ -1,0 +1,6 @@
+Last Name: Rosie
+First Name: Ellen
+Middle Name: Josie
+Age: 25
+Gender: female
+Path: Tester_Profiles\Rosie, EllenJ.
