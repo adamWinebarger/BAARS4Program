@@ -8,8 +8,9 @@ using System.Diagnostics;
 
 namespace BAARS_4_Tester
 {
-    class Tester
+    public class Tester
     {
+        // All info to display in table
         public string lastName { get; set; }
         public string firstName { get; set; }
         public string middleName { get; set; }
@@ -17,6 +18,7 @@ namespace BAARS_4_Tester
         public string gender { get; set; }
         public string path { get; set; }
 
+        // Loads all the tester information
         public Tester(string path)
         {
             this.path = path;

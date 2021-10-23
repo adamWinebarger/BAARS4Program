@@ -24,6 +24,7 @@ namespace BAARS_4_Tester
     public partial class MainWindow : Window
     {
 
+        // Our two lists for the table
         List<Tester> names = new List<Tester>();
         List<Tester> filteredNames = new List<Tester>();
 
@@ -65,11 +66,13 @@ namespace BAARS_4_Tester
             Table.ItemsSource = names;
         }
 
+        // Researches table everytime the text is changed
         private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             SearchTable();
         }
         
+        // Searches the table depending on first/middle/last name depending on user
         private void SearchTable()
         {
             filteredNames.Clear();
@@ -115,43 +118,40 @@ namespace BAARS_4_Tester
             Table.ItemsSource = filteredNames.ToList();
         }
 
-        private void RowClick(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("");
-        }
-
+        // Researches table through first name
         private void FirstName_Checked(object sender, RoutedEventArgs e)
         {
             firstNameCheckBox.IsChecked = true;
             SearchTable();
         }
 
+        // Researches table through middle name
         private void MiddleName_Checked(object sender, RoutedEventArgs e)
         {
             middleNameCheckBox.IsChecked = true;
             SearchTable();
         }
 
+        // Researches table through last name
         private void LastName_Checked(object sender, RoutedEventArgs e)
         {
             lastNameCheckBox.IsChecked = true; 
             SearchTable();
         }
 
+        // Opens up new windoww with the testers answers 
         private void Table_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             try
             {
                 DataGridRow row = sender as DataGridRow;
-
-                MessageBox.Show(filteredNames[row.GetIndex()].path.ToString());
+                new TesterAnswers(filteredNames[row.GetIndex()]).Show();
             }
             catch
             {
 
             }
-
-    
         }
+
     }
 }
