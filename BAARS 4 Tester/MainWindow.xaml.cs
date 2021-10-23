@@ -24,6 +24,9 @@ namespace BAARS_4_Tester
     public partial class MainWindow : Window
     {
 
+        List<Tester> names = new List<Tester>();
+        List<Tester> filteredNames = new List<Tester>();
+
         // Runs on start of window
         public MainWindow()
         {
@@ -50,22 +53,105 @@ namespace BAARS_4_Tester
             Debug.WriteLine("here");
             string[] files1 = Directory.GetDirectories("Tester_Profiles\\");
 
-            //LinkedList <Tester> = new LinkedList<Tester>();
-
             int numOfPeople = files1.Length;
-            //var names = new List<String>();
-
-            List<Tester> names = new List<Tester>();
   
             for (int i = 0; i < numOfPeople; i++)
             {
-                // string[] directoryName = files1[i].Split(' ');
                 names.Add(new Tester(files1[i]));
+                filteredNames.Add(new Tester(files1[i]));
             }
 
             Table.IsReadOnly = true;
             Table.ItemsSource = names;
+        }
 
+        private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            SearchTable();
+        }
+        
+        private void SearchTable()
+        {
+            filteredNames.Clear();
+
+            if (SearchBox.Text.Equals(""))
+            {
+                filteredNames.AddRange(names);
+            }
+            else
+            {
+                if (firstNameCheckBox.IsChecked.GetValueOrDefault())
+                {
+                    foreach (Tester t in names)
+                    {
+                        if (t.firstName.Contains(SearchBox.Text) && !filteredNames.Contains(t))
+                        {
+                            filteredNames.Add(t);
+                        }
+                    }
+                }
+                if (middleNameCheckBox.IsChecked.GetValueOrDefault())
+                {
+                    foreach (Tester t in names)
+                    {
+                        if (t.middleName.Contains(SearchBox.Text) && !filteredNames.Contains(t))
+                        {
+                            filteredNames.Add(t);
+                        }
+                    }
+                }
+                if (lastNameCheckBox.IsChecked.GetValueOrDefault())
+                {
+                    foreach (Tester t in names)
+                    {
+                        if (t.lastName.Contains(SearchBox.Text) && !filteredNames.Contains(t))
+                        {
+                            filteredNames.Add(t);
+                        }
+                    }
+                }
+            }
+
+            Table.ItemsSource = filteredNames.ToList();
+        }
+
+        private void RowClick(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("");
+        }
+
+        private void FirstName_Checked(object sender, RoutedEventArgs e)
+        {
+            firstNameCheckBox.IsChecked = true;
+            SearchTable();
+        }
+
+        private void MiddleName_Checked(object sender, RoutedEventArgs e)
+        {
+            middleNameCheckBox.IsChecked = true;
+            SearchTable();
+        }
+
+        private void LastName_Checked(object sender, RoutedEventArgs e)
+        {
+            lastNameCheckBox.IsChecked = true; 
+            SearchTable();
+        }
+
+        private void Table_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            try
+            {
+                DataGridRow row = sender as DataGridRow;
+
+                MessageBox.Show(filteredNames[row.GetIndex()].path.ToString());
+            }
+            catch
+            {
+
+            }
+
+    
         }
     }
 }

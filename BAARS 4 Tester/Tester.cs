@@ -15,15 +15,14 @@ namespace BAARS_4_Tester
         public string middleName { get; set; }
         public int age { get; set; }
         public string gender { get; set; }
-        public string path { get; set;  }
+        public string path { get; set; }
 
         public Tester(string path)
         {
             this.path = path;
 
             if (File.Exists(path + "\\testerInfo.txt"))
-            {
-                
+            {    
                 string[] testerInfo = File.ReadAllLines((path + "\\testerInfo.txt"));
 
                 lastName = testerInfo[0].Substring(testerInfo[0].IndexOf(":") + 1);

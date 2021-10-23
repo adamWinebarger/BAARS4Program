@@ -175,7 +175,6 @@ namespace BAARS_4_Tester
                     for (int i = 0; i < info.Length; i += 2)
                     {
                         writer.WriteLine("{0}{1}", info[i], info[i + 1]);
-                        
                     }
                 }
             }

@@ -7,11 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterOwner">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="157*"/>
+            <RowDefinition Height="277*"/>
+        </Grid.RowDefinitions>
         <Label Content="Welcome to the BAARS-IV scoring... thing" HorizontalAlignment="Center" Margin="0,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.579" FontSize="14"/>
         <Button x:Name="TakeTestButton" Content="Take Test" HorizontalAlignment="Left" Margin="112,57,0,0" VerticalAlignment="Top" Height="46" Width="107" Click="TakeTestButton_Click"/>
         <Button x:Name="Button2" Content="Two \nLines" HorizontalAlignment="Left" Margin="267,57,0,0" VerticalAlignment="Top" Height="46" Width="115"/>
-        <DataGrid x:Name="Table" Margin="10,165,10,10" />
-        <TextBox HorizontalAlignment="Left" Height="19" Margin="10,134,0,0" Text="Search" TextWrapping="Wrap" VerticalAlignment="Top" Width="234"/>
+        <DataGrid x:Name="Table" Margin="10,8,10,10" Grid.Row="1">
+            <DataGrid.Resources>
+                <Style TargetType="DataGridRow">
+                    <EventSetter Event="MouseDoubleClick" Handler="Table_MouseDoubleClick"/>
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
+        <TextBox x:Name="SearchBox" HorizontalAlignment="Left" Height="19" Margin="10,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" TextChanged="SearchBox_TextChanged"/>
+        <CheckBox x:Name="lastNameCheckBox" Content="Last Name" HorizontalAlignment="Left" Margin="457,136,0,0" VerticalAlignment="Top" Checked="LastName_Checked"/>
+        <CheckBox x:Name="firstNameCheckBox" Content="First Name" HorizontalAlignment="Left" Margin="267,136,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.21,-0.593" Checked="FirstName_Checked"/>
+        <CheckBox x:Name="middleNameCheckBox" Content="Middle Name" HorizontalAlignment="Center" Margin="0,136,0,0" VerticalAlignment="Top" Checked="MiddleName_Checked" RenderTransformOrigin="0.572,0.157"/>
 
 
     </Grid>
