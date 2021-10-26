@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="TesterAnswers" Height="450" Width="800">
     <Grid>
-        <TextBlock x:Name="display" HorizontalAlignment="Left" Height="50" Margin="23,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107"/>
+        <TextBlock x:Name="display" HorizontalAlignment="Left" Height="16" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107" Text="Name:"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,31,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <DataGrid x:Name="Table" Margin="131,0,0,0"/>
 
     </Grid>
 </Window>

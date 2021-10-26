@@ -12,6 +12,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.IO;
+using FireSharp;
+using FireSharp.Config;
+using FireSharp.Response;
+using FireSharp.Interfaces;
+
 
 namespace BAARS_4_Tester
 {
@@ -28,6 +33,28 @@ namespace BAARS_4_Tester
         public TesterInfoWindow()
         {
             InitializeComponent();
+            TesterInfoWindow_Load();
+        }
+
+
+        IFirebaseConfig ifc = new FirebaseConfig()
+        {
+            AuthSecret = "OxXQFMnimCdKgNOXdJerbIrODB9v4mIAfVrLq1dp",
+            BasePath = "https://baars-4-default-rtdb.firebaseio.com/"
+        };
+
+        IFirebaseClient client;
+
+        private void TesterInfoWindow_Load()
+        {
+            try
+            {
+                client = new FirebaseClient(ifc);
+            } 
+            catch(Exception)
+            {
+                MessageBox.Show("Error connecting to firebase");
+            }
         }
 
         // Ensures all information is valid, creates directory for the tester & saves tester info to a file, then opens the test window
