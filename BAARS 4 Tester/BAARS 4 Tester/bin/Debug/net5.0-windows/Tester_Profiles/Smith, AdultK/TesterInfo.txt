@@ -1,9 +1,0 @@
-Last Name: Smith
-First Name: 
-Adult
-Middle Name: Kilo
-Age: 
-22
-Gender: male
-Path: 
-Tester_Profiles\Smith, AdultK.
