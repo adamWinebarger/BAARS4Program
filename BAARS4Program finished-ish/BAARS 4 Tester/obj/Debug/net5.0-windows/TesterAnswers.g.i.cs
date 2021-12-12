@@ -109,7 +109,7 @@ namespace BAARS_4_Tester {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/BAARS 4 Tester;component/testeranswers.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/BAARS 4 Tester;V1.0.0.0;component/testeranswers.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\TesterAnswers.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

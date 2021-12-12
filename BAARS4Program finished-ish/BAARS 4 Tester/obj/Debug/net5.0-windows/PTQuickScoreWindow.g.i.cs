@@ -93,7 +93,7 @@ namespace BAARS_4_Tester {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/BAARS 4 Tester;component/ptquickscorewindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/BAARS 4 Tester;V1.0.0.0;component/ptquickscorewindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\PTQuickScoreWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

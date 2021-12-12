@@ -101,7 +101,7 @@ namespace BAARS_4_Tester {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/BAARS 4 Tester;component/ptinfowindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/BAARS 4 Tester;V1.0.0.0;component/ptinfowindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\PTInfoWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

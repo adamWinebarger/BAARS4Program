@@ -374,11 +374,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adamk\\Documents\\College Stuff\\Fall 2021\\Intro to Software Engineering\\BAARS4Program 12.6\\BAARS4Program 12.3\\BAARS 4 Tester\\BAARS 4 Tester.csproj",
+      "projectUniqueName": "C:\\Users\\adamk\\Documents\\College Stuff\\Fall 2021\\Intro to Software Engineering\\BAARS4Program\\BAARS4Program finished-ish\\BAARS 4 Tester\\BAARS 4 Tester.csproj",
       "projectName": "BAARS 4 Tester",
-      "projectPath": "C:\\Users\\adamk\\Documents\\College Stuff\\Fall 2021\\Intro to Software Engineering\\BAARS4Program 12.6\\BAARS4Program 12.3\\BAARS 4 Tester\\BAARS 4 Tester.csproj",
+      "projectPath": "C:\\Users\\adamk\\Documents\\College Stuff\\Fall 2021\\Intro to Software Engineering\\BAARS4Program\\BAARS4Program finished-ish\\BAARS 4 Tester\\BAARS 4 Tester.csproj",
       "packagesPath": "C:\\Users\\adamk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adamk\\Documents\\College Stuff\\Fall 2021\\Intro to Software Engineering\\BAARS4Program 12.6\\BAARS4Program 12.3\\BAARS 4 Tester\\obj\\",
+      "outputPath": "C:\\Users\\adamk\\Documents\\College Stuff\\Fall 2021\\Intro to Software Engineering\\BAARS4Program\\BAARS4Program finished-ish\\BAARS 4 Tester\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
