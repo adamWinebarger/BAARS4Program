@@ -31,6 +31,9 @@ Test Window.xaml
 - SaveAnswers2Textfile() - Saves all the answers that the user put into a text file in their directory
 - WriteAdultResults2TextFile() - Saves the adult scores for the test to a text file in their directory
 - WriteYouthResults2TextFile() - Saves the youth scores for the test to a text file in their directory
+- lastNameCheckBox() - Checks the last name and sees if it was found for the search table
+- middleNameCheckBox() - Checks the middle name and sees if it was found for the search table
+- firstNameCheckBox() - Checks the first name and sees if it was found for the search table
 
 
 Bars Scoring Classes
