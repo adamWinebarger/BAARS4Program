@@ -51,7 +51,9 @@ namespace BAARS_4_Tester
         // Button to get user to take test, opens user information input window
         private void TakeTestButton_Click(object sender, RoutedEventArgs e)
         {
-            new TesterInfoWindow().Show();
+            new TesterInfoWindow().ShowDialog();
+
+            //ReloadTable();
         }
 
         // Quickly calculate the score
@@ -99,6 +101,7 @@ namespace BAARS_4_Tester
         private void RefreshButton_Click(object sender, RoutedEventArgs e)
         {
             ReloadTable();
+            ReloadTable(); //Reload Table has to be called twice here in order to work... no idea why.
         }
 
         //Button for deleting directories. Mainly for development purposes. May be made invisible for final release
@@ -175,6 +178,7 @@ namespace BAARS_4_Tester
             //Table.ItemsSource = null; //In theory, this is unneccessary. But we'll leave it in for now anyways.
             if (K.pubKey() != null)
             {
+                SearchTable(); //LoadData only sort of works so we needed to call search first.
                 LoadDataIntoTable();
             }
             else
@@ -190,6 +194,7 @@ namespace BAARS_4_Tester
         {
 
             names.Clear(); //clearing names here prevents duplicates from showing up on reload
+            names = new List<Tester>();
 
 
             if (Directory.Exists("Tester_Profiles\\"))
@@ -210,7 +215,7 @@ namespace BAARS_4_Tester
                 names.Sort((x, y) => string.Compare(x.LastName, y.LastName));
 
                 Table.IsReadOnly = true;
-                Table.ItemsSource = names.ToList();
+                Table.ItemsSource = names;
             }
         }
 

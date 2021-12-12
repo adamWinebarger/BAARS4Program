@@ -139,7 +139,8 @@ namespace BAARS_4_Tester
                 {
                     currentSelectedPath + K.adultResults,
                     currentSelectedPath + K.adultAnswers,
-                    "Adult"
+                    "Adult",
+                    Encrypter.DecryptFile(currentSelectedPath + K.adultResults, K.pubKey())[0]
                 };
                 otherSelected = s;
             }
@@ -149,7 +150,8 @@ namespace BAARS_4_Tester
                 {
                     currentSelectedPath + K.childResults,
                     currentSelectedPath + K.childAnswers,
-                    "Youth"
+                    "Youth",
+                    Encrypter.DecryptFile(currentSelectedPath + K.childResults, K.pubKey())[0]
                 };
                 otherSelected = s;
             }

@@ -47,7 +47,7 @@ namespace BAARS_4_Tester
             this.t = t;
             InitializeComponent();
             //getAnswers(K.adultAnswers);
-            name = nameLabel.Text = t.FirstName + " " + t.MiddleName + " " + t.LastName;
+            name = t.FirstName + " " + t.LastName;
             nameLabel.Text = name;
             //Closing += TesterAnswers.OnWindowClosing();
             //adultAnswersEncrypted = containsString(t.path + K.adultAnswers, t.lastName);
@@ -126,12 +126,14 @@ namespace BAARS_4_Tester
                         getAnswers(s[1], K.adultQuestions);
                         resultsLabel.Content = loadAdultResults(s[0], 1);
                         resultsLabel_2.Content = loadAdultResults(s[0], 2);
+                        nameLabel.Text = s[3];
                     }
                     else if (s[2].Equals("Youth"))
                     {
                         getAnswers(s[1], K.childQuestions);
                         resultsLabel.Content = loadChildResults(s[0], 1);
                         resultsLabel_2.Content = loadChildResults(s[0], 2);
+                        nameLabel.Text = s[3];
                     }
                 }
                 else
