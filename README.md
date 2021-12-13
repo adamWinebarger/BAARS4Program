@@ -74,6 +74,16 @@ PTInfoWindow.xaml.cs
 - allInputsValid() - Verfies everything is entered correctly in the textboxes and combo boxes
 - makeOtherTestsDirectory() - Makes the directory for the new tests
 
+PTQuickScoreWindow.xaml.cs
+- adultAnswersInputTextBox_TextChanged() - When new text is added advance to next question or go back/forward depending on character input, also checks for invalid input
+- childAnswersInputTextbox_TextChanged() - When new text is added advance to next question or go back/forward depending on character input, also checks for invalid input
+- finishButton_Click() - Closes the window
+- updateQuestionNumberLabel() - Everytime a new question is reached show that on the label
+- createRelationalDirectory() - Create the new directory based on the relation of the person to the tester
+- createAnswersTextfile() - Puts all the answers into a text file in the new directory 
+- createAdultResultsTextFile() - Puts all the answers to the adult section of the text into a text file
+- createChildResultsTextFile() - Puts all the answers to the child section of the text into a text file
+
 Bars Scoring Classes
 
 ScoreBAARS.cs
