@@ -48,6 +48,32 @@ Test Window.xaml.cs
 - WriteAdultResults2TextFile() - Saves the adult scores for the test to a text file in their directory
 - WriteYouthResults2TextFile() - Saves the youth scores for the test to a text file in their directory
 
+Test Answers.xaml.cs
+- This window opens up for a tester and allows you to show all their answers to the test aswell as answers from a parent
+- OnWindowClosing() - Reincrypts the files on close
+- showAdult_Click() - Shows all the questions and answers and results for the answers on the adult portion of the test
+- showChild_Click() - Shows all the questions and answers and results for the answers on the child portion of the test
+- showOther_Click() - Opens a window to show all the other times they might have taken the test or what their parents might have put down for their test
+- getAnswers() - Get the answer information from the users answers text file and the questions and load it into a table\
+- loadAdultResults() - Loads all the adult answers into a datagrid
+- loadChildResults() - Loads all the child answers into a datagrid
+
+OtherTestSelectionWindow.xaml.cs
+- This window is opened in the test answers window to show other tests that a user might have taken or tests that their parents took for them 
+- cancelButton_Click() - Closes the window
+- okButton_Click() - Populates the answers on the answers window with the test they selected and then closes this window
+- loadDataIntoTable() - Upon startup all the data for the other tests get loaded into the datagrid
+- othersTable_SelectionChanged() - Repopulates the table when the selection changes
+- Table_MouseDoubleClick() - Upon double click populate the answers window and close out of this
+- populateOtherSelected() - Populates the table with the other tests
+
+PTInfoWindow.xaml.cs
+- This window is for the quick score function. It allows you to enter the information for a user to add another test to their database
+- ComboBox_SelectionChanged() - Changes the visibility for some UI settings when certain elements for the combo box are selected
+- SubmitButton_Click() - Pushes all their information that was entered to a text file and procedes to the quick score window
+- allInputsValid() - Verfies everything is entered correctly in the textboxes and combo boxes
+- makeOtherTestsDirectory() - Makes the directory for the new tests
+
 Bars Scoring Classes
 
 ScoreBAARS.cs
