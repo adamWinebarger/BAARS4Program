@@ -84,6 +84,24 @@ PTQuickScoreWindow.xaml.cs
 - createAdultResultsTextFile() - Puts all the answers to the adult section of the text into a text file
 - createChildResultsTextFile() - Puts all the answers to the child section of the text into a text file
 
+Tester.cs
+- This file contains all the information for someone who has taken the test in the past. It includes their 
+- last name, first name, middle name, age, gender, and the path of their directory. Its main purpose
+- is for loading their data into the datagrid in the Main Window
+
+K.cs
+- This class includes a lot of important rescource locations like the files for the adult results, tester info, and loaction for the questions for the test
+- privKey() - Checks for the key text file and returns that encoding 
+- pubKey() - Checks for the key.txt file in the removable devices on a computer
+
+Encrpyter.cs
+- This class handles all encrpytion for our files
+- EncryptFile() - This function is used to encrpy a file
+- DecryptFile2() - This function will decrept a file
+- DecryptFile() - This function also decrepts a file not entirely sure what the differences are would have to ask Adam
+- encryptString() - This funciton takes a string and returns it encrypted
+- decryptString() - This function takes a string and returns it decrepted 
+
 Bars Scoring Classes
 
 ScoreBAARS.cs
